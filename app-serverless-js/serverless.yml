@@ -16,7 +16,6 @@ provider:
   apiGateway:
     restApiId: d3cicc9go7
     restApiRootResourceId: 3pfq18
-# you can overwrite defaults here
   stage: dev
   region: ap-northeast-1
 
@@ -38,8 +37,6 @@ functions:
         - package.json
         - package-lock.json
         - yarn.lock
-      include:
-        - ./handler.js
       individually: true
     layers:
       - {Ref: NodemodulesLambdaLayer}
@@ -59,7 +56,6 @@ functions:
 # AWS Lambda Layers
 layers:
   nodemodules:
-    # path: ./node_modules
     path: layer
     name: ${self:service}-node_modules
     description: This is node node_modules
