@@ -22,7 +22,7 @@ provider:
 
 # AWS Lambda Functions
 functions:
-  function:
+  hello:
     handler: handler.call
     # Default {service}-{stage}-{function}
     name: lambdaName
@@ -60,10 +60,7 @@ functions:
 layers:
   nodemodules:
     # path: ./node_modules
-    path: ./
-    package:
-      include:
-        - ./node_modules
+    path: layer
     name: ${self:service}-node_modules
     description: This is node node_modules
     compatibleRuntimes:
