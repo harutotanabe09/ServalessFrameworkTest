@@ -1,0 +1,13 @@
+{
+  "name": "app-serverless-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^7.5.0",
+    "serverless-layers": "^2.3.3"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}

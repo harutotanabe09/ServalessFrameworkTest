@@ -1,11 +1,12 @@
 'use strict';
+const moment = require('moment');
 
-module.exports.hello = async (event) => {
+module.exports.call = async (event) => {
   return {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: 'Go Serverless v1.0! Your function executed successfully!',
+        message: 'Go Serverless !! Your function executed successfully!' + moment().format(),
         input: event,
       },
       null,
