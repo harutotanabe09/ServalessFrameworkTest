@@ -7,7 +7,7 @@ module.exports.call = async (event) => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: 'Go Serverless !! Your function executed successfully!' + pow(23)  + moment().format(),
+        message: 'Go Serverless dir src !!' + pow(23)  + moment().format(),
         input: event,
       },
       null,

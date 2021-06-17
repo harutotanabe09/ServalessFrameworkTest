@@ -22,7 +22,7 @@ provider:
 # AWS Lambda Functions
 functions:
   hello:
-    handler: handler.call
+    handler: src/handler.call
     # Default {service}-{stage}-{function}
     name: lambdaName
     memorySize: 512
